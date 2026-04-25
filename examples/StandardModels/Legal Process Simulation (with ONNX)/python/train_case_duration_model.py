@@ -44,7 +44,7 @@ def generate_case_data(n: int):
     case_type = np.random.randint(0, 4, n).astype(np.float32)
     complexity = np.random.randint(1, 11, n).astype(np.float32)
     evidence_count = np.random.poisson(15, n).astype(np.float32)
-    num_parties = (np.random.geometric(0.4, n) + 1).astype(np.float32)
+    num_parties = np.random.randint(2, 7, n).astype(np.float32)
     prior_continuances = np.random.poisson(1.5, n).astype(np.float32)
     judge_experience = np.random.uniform(1, 30, n).astype(np.float32)
     jurisdiction_code = np.random.randint(0, 5, n).astype(np.float32)
