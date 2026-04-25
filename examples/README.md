@@ -7,3 +7,11 @@ The models in the "Basic" folder are simple demonstrations of the library which 
 Many examples also include a "python" directory which has the code that was used to generate the ONNX files (provided purely as reference). The descriptions below explain further about the provided scripts and their individual requirements.
 
 If you would like to visualize any of the ONNX files provided, check out: https://netron.app/. 
+
+## Standard Examples
+
+| Example | Description |
+|---------|-------------|
+| **Simple Hospital (AI Testbed with ONNX)** | Hospital simulation using ONNX models for patient arrival rate and length-of-stay prediction |
+| **Supply Chain (with ONNX)** | Supply chain model using an LSTM to forecast order times and sizes |
+| **Legal Process Simulation (with ONNX)** | Court proceedings simulation using ONNX models for case filing rate and case duration prediction |

@@ -17,3 +17,7 @@ For this RNN, a stateful LSTM was used. It takes as input the current "epoch" ti
 This is a model of a scenario created based on real-world datasets: one for patient length of stay and another for patient arrival to a hospital. 
 
 This model is adapted from the one used for demonstrating Pypeline (an AnyLogic Python connector library). The h5 files in the original were converted to ONNX files using the keras2onnx library. The subsequent files were then modified to perform some of the normalization and reshaping as part of the inferencing model itself.
+
+## Legal Process Simulation (with ONNX)
+
+This model simulates court/legal proceedings with AI-driven predictions. Cases flow through intake, filing review, discovery, scheduling, court hearings, and resolution. Two ONNX neural networks drive the simulation: one predicts the daily case filing rate based on a sliding window of recent rates; the other predicts case hearing duration based on 8 case attributes (case type, complexity, evidence count, number of parties, prior continuances, judge experience, jurisdiction, and jury trial flag). A toggle parameter lets you compare AI-driven versus default stochastic behaviour.
